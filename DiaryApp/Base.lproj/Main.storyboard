@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eY0-Il-B1J">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Diary-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MyDiaryVC" id="BYZ-38-t0r" customClass="MyDiaryVC" customModule="DiaryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Te8-ng-kQe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Te8-ng-kQe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="0.10000000000000001" id="2ix-xZ-jGc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Te8-ng-kQe" secondAttribute="trailing" constant="0.10000000000000001" id="PEu-WW-8AB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Te8-ng-kQe" secondAttribute="bottom" constant="0.10000000000000001" id="bKi-48-bQ2"/>
+                            <constraint firstItem="Te8-ng-kQe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="0.10000000000000001" id="qfi-yO-wDv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Diary" id="AWb-gh-YV9"/>
+                    <connections>
+                        <outlet property="tblView" destination="Te8-ng-kQe" id="Ete-v1-sHF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+        </scene>
+        <!--Diary Title-->
+        <scene sceneID="FqP-s6-4MA">
+            <objects>
+                <viewController storyboardIdentifier="DiaryDetailVC" id="sMU-E7-TKc" customClass="DiaryDetailVC" customModule="DiaryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Oc-fH-Yxi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G9X-vq-OyH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="748"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xsb-VA-hAy">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="532.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diary Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOo-Sg-AFs">
+                                                <rect key="frame" x="25" y="25" width="369" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gjp-1f-2QG">
+                                                <rect key="frame" x="25" y="54" width="364" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBo-LO-bko">
+                                                <rect key="frame" x="25" y="270" width="388.5" height="1"/>
+                                                <color key="backgroundColor" white="0.90908682268935359" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="KGL-a5-iwG"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nag-3w-68E">
+                                                <rect key="frame" x="25" y="515.5" width="388.5" height="1"/>
+                                                <color key="backgroundColor" white="0.90908682269999996" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="gbi-Mu-F01"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diary Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbB-g0-LLO">
+                                                <rect key="frame" x="25" y="287" width="369" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yas-Pd-LkH">
+                                                <rect key="frame" x="25" y="316" width="369" height="183.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="tOo-Sg-AFs" firstAttribute="leading" secondItem="Xsb-VA-hAy" secondAttribute="leading" constant="25" id="0Cg-aA-5of"/>
+                                            <constraint firstItem="tbB-g0-LLO" firstAttribute="trailing" secondItem="tOo-Sg-AFs" secondAttribute="trailing" id="3DL-tD-eBx"/>
+                                            <constraint firstItem="Nag-3w-68E" firstAttribute="leading" secondItem="tbB-g0-LLO" secondAttribute="leading" id="57q-s5-nEk"/>
+                                            <constraint firstItem="tbB-g0-LLO" firstAttribute="leading" secondItem="tOo-Sg-AFs" secondAttribute="leading" id="6qE-7Y-1fH"/>
+                                            <constraint firstItem="yas-Pd-LkH" firstAttribute="leading" secondItem="tbB-g0-LLO" secondAttribute="leading" id="GhL-Vh-fQR"/>
+                                            <constraint firstItem="Nag-3w-68E" firstAttribute="trailing" secondItem="OBo-LO-bko" secondAttribute="trailing" id="LDC-nW-iLv"/>
+                                            <constraint firstAttribute="bottom" secondItem="Nag-3w-68E" secondAttribute="bottom" constant="16" id="NH9-Qu-lTX"/>
+                                            <constraint firstItem="yas-Pd-LkH" firstAttribute="top" secondItem="tbB-g0-LLO" secondAttribute="bottom" constant="12" id="NZT-RS-T8r"/>
+                                            <constraint firstItem="yas-Pd-LkH" firstAttribute="trailing" secondItem="tbB-g0-LLO" secondAttribute="trailing" id="OqP-K7-138"/>
+                                            <constraint firstItem="tbB-g0-LLO" firstAttribute="top" secondItem="OBo-LO-bko" secondAttribute="bottom" constant="16" id="P9h-cN-fwY"/>
+                                            <constraint firstItem="OBo-LO-bko" firstAttribute="top" secondItem="Gjp-1f-2QG" secondAttribute="bottom" constant="16" id="Vzh-dt-epa"/>
+                                            <constraint firstItem="Nag-3w-68E" firstAttribute="leading" secondItem="yas-Pd-LkH" secondAttribute="leading" id="ddg-Ti-RrI"/>
+                                            <constraint firstItem="Gjp-1f-2QG" firstAttribute="leading" secondItem="tOo-Sg-AFs" secondAttribute="leading" id="do5-H1-P9Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="OBo-LO-bko" secondAttribute="trailing" constant="0.10000000000000001" id="eAZ-0a-Pvt"/>
+                                            <constraint firstItem="OBo-LO-bko" firstAttribute="leading" secondItem="tOo-Sg-AFs" secondAttribute="leading" id="ihB-Wi-4j0"/>
+                                            <constraint firstAttribute="trailing" secondItem="tOo-Sg-AFs" secondAttribute="trailing" constant="20" id="ivB-uD-g7S"/>
+                                            <constraint firstItem="Gjp-1f-2QG" firstAttribute="top" secondItem="tOo-Sg-AFs" secondAttribute="bottom" constant="12" id="lAr-VD-Tvn"/>
+                                            <constraint firstItem="Nag-3w-68E" firstAttribute="top" secondItem="yas-Pd-LkH" secondAttribute="bottom" constant="16" id="nph-kP-J6D"/>
+                                            <constraint firstItem="tOo-Sg-AFs" firstAttribute="top" secondItem="Xsb-VA-hAy" secondAttribute="top" constant="25" id="s1m-5q-qp0"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gjp-1f-2QG" secondAttribute="trailing" constant="25" id="vYa-af-XAS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Xsb-VA-hAy" secondAttribute="bottom" constant="0.10000000000000001" id="AXt-i0-yYg"/>
+                                    <constraint firstItem="Xsb-VA-hAy" firstAttribute="top" secondItem="G9X-vq-OyH" secondAttribute="top" constant="0.10000000000000001" id="G0H-Ym-UAt"/>
+                                    <constraint firstItem="Xsb-VA-hAy" firstAttribute="centerX" secondItem="G9X-vq-OyH" secondAttribute="centerX" id="TUX-vy-DdM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xsb-VA-hAy" secondAttribute="trailing" constant="0.10000000000000001" id="XvW-cl-2oQ"/>
+                                    <constraint firstItem="Xsb-VA-hAy" firstAttribute="leading" secondItem="G9X-vq-OyH" secondAttribute="leading" constant="0.10000000000000001" id="wZ6-cy-RJT"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmC-AN-uzf">
+                                <rect key="frame" x="25" y="800" width="364" height="50"/>
+                                <color key="backgroundColor" red="0.26253530380000001" green="0.1285087764" blue="0.63393312690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uyc-Dv-FMu"/>
+                                </constraints>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSave:" destination="sMU-E7-TKc" eventType="touchUpInside" id="Yff-EB-jPb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WmC-AN-uzf" firstAttribute="top" secondItem="G9X-vq-OyH" secondAttribute="bottom" constant="8" id="OdE-pG-iSR"/>
+                            <constraint firstItem="rB0-W4-hQc" firstAttribute="trailing" secondItem="G9X-vq-OyH" secondAttribute="trailing" constant="0.10000000000000001" id="TIc-dI-1Bz"/>
+                            <constraint firstItem="G9X-vq-OyH" firstAttribute="leading" secondItem="rB0-W4-hQc" secondAttribute="leading" constant="0.10000000000000001" id="Tq6-w2-7pT"/>
+                            <constraint firstItem="G9X-vq-OyH" firstAttribute="top" secondItem="rB0-W4-hQc" secondAttribute="top" constant="0.10000000000000001" id="dhL-Ks-GYZ"/>
+                            <constraint firstItem="WmC-AN-uzf" firstAttribute="leading" secondItem="rB0-W4-hQc" secondAttribute="leading" constant="25" id="fzQ-mc-U6J"/>
+                            <constraint firstItem="rB0-W4-hQc" firstAttribute="trailing" secondItem="WmC-AN-uzf" secondAttribute="trailing" constant="25" id="iqr-zt-0kX"/>
+                            <constraint firstItem="WmC-AN-uzf" firstAttribute="bottom" secondItem="rB0-W4-hQc" secondAttribute="bottom" constant="-12" id="mTg-cl-cvd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rB0-W4-hQc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Diary Title" id="nfA-tD-Bmu"/>
+                    <connections>
+                        <outlet property="btnSave" destination="WmC-AN-uzf" id="Iqu-ou-ZBd"/>
+                        <outlet property="txtDescription" destination="yas-Pd-LkH" id="liU-Sd-Qsb"/>
+                        <outlet property="txtTitle" destination="Gjp-1f-2QG" id="zuH-wZ-YM4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCI-Hy-LMg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1866.6666666666667" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CWH-fq-Paf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eY0-Il-B1J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="tAW-8v-wTQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zhM-tT-2vF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXW-ko-bcU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+</document>

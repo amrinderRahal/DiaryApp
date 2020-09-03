@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiaryNotesHeaderView" customModule="DiaryApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="I4x-FB-AOS"/>
+                <outlet property="lblDate" destination="aEv-DZ-YOu" id="5kk-ka-sUQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eis-Sa-tGX">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kpw-uG-oOQ">
+                            <rect key="frame" x="50" y="12.5" width="20" height="19"/>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="0SU-DU-RQ3"/>
+                                <constraint firstAttribute="width" constant="20" id="ZFI-aa-Bci"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEv-DZ-YOu">
+                            <rect key="frame" x="82" y="13" width="320" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Kpw-uG-oOQ" secondAttribute="bottom" constant="8" id="2UU-b5-Abw"/>
+                        <constraint firstItem="aEv-DZ-YOu" firstAttribute="centerY" secondItem="Kpw-uG-oOQ" secondAttribute="centerY" id="Eh9-D6-OEd"/>
+                        <constraint firstItem="aEv-DZ-YOu" firstAttribute="leading" secondItem="Kpw-uG-oOQ" secondAttribute="trailing" constant="12" id="Hf3-q9-hND"/>
+                        <constraint firstItem="Kpw-uG-oOQ" firstAttribute="leading" secondItem="Eis-Sa-tGX" secondAttribute="leading" constant="50" id="IzA-dT-egB"/>
+                        <constraint firstAttribute="trailing" secondItem="aEv-DZ-YOu" secondAttribute="trailing" constant="12" id="Y2g-FQ-7X1"/>
+                        <constraint firstItem="Kpw-uG-oOQ" firstAttribute="top" secondItem="Eis-Sa-tGX" secondAttribute="top" constant="12" id="lfK-NZ-brV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Eis-Sa-tGX" secondAttribute="trailing" constant="0.10000000000000001" id="Tj4-h3-q4j"/>
+                <constraint firstAttribute="bottom" secondItem="Eis-Sa-tGX" secondAttribute="bottom" constant="0.10000000000000001" id="W4u-JB-stH"/>
+                <constraint firstItem="Eis-Sa-tGX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="0.10000000000000001" id="lKz-30-Q60"/>
+                <constraint firstItem="Eis-Sa-tGX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="0.10000000000000001" id="pTf-SV-g8h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-143.97321428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="clock" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
